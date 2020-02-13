@@ -1,0 +1,9 @@
+[submodule "bookstore_users_api"]
+	path = bookstore_users_api
+	url = https://github.com/yftzz/bookstore_users_api.git
+[submodule "bookstore_oauth-api"]
+	path = bookstore_oauth-api
+	url = https://github.com/yftzz/bookstore_oauth-api.git
+[submodule "bookstore_items-api"]
+	path = bookstore_items-api
+	url = https://github.com/yftzz/bookstore_items-api.git
