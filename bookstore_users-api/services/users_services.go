@@ -6,10 +6,6 @@ import (
 )
 
 func GetUser(userID int64) (*users.User, *errors.RestErr) {
-	if userID <= 0 {
-		return nil, errors.NewBadRequestError("Invalid user ID")
-	}
-
 	res := users.User{ID: userID}
 	if err := res.Get(); err != nil {
 		return nil, err

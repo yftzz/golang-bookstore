@@ -19,5 +19,9 @@ func (user *User) Validate() *errors.RestErr {
 	if user.Email == "" {
 		return errors.NewBadRequestError("Invalid user email address")
 	}
+
+	if user.ID <= 0 {
+		return errors.NewBadRequestError("Invalid user ID")
+	}
 	return nil
 }
